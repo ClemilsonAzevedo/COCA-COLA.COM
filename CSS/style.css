@@ -1,0 +1,242 @@
+/*especial charsets import to pt-br keyboard*/
+@charset "UTF-8";
+/*especial charsets import to pt-br keyboard*/
+
+/*Necessary imports (fonts)*/
+@font-face 
+{
+    font-family: bebas ;
+    src: url(../fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
+@font-face 
+{
+    font-family: cocacola;
+    src: url(../fonts/loki_cola-font/LOKICOLA.TTF);
+}
+/*Necessary imports*/
+
+/*Variables*/
+:root
+{
+    --lettercolor:white;
+    --backgroundcolor:#bf3124ad;
+    --sectioncolor:#d9756c7c;
+}
+/*Variables*/
+
+/*geral style*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background: linear-gradient(to bottom,  #D92E1E,#751f17 ,#000000);
+    color: var(--lettercolor);
+    min-height: 100vh;
+}
+/*geral style*/
+
+/*Header Style*/
+header
+{
+    background: linear-gradient(to top,  #D92E1E ,#00000081);
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;   
+    align-items: center;
+}
+
+header > h1
+{
+    margin: auto;
+    cursor: pointer;
+    font:normal normal 2.8em cocacola;
+
+}
+
+header > nav
+{
+    margin: auto;
+}
+
+header > nav > ul
+{
+    list-style: none;
+    display: flex;
+    padding: 5px;
+}
+
+header > nav > ul > li
+{
+    margin-left: 15px;
+    font-weight: 600;
+}
+
+header > nav > ul > li > a
+{
+    color: var(--lettercolor);
+    font-size: 1.2em;
+    font-variant: small-caps;
+    text-decoration: none;
+    transition-duration: .2s;
+}
+
+header > nav > ul > li > a:hover
+{
+    color: var(--backgroundcolor);
+    background:var(--lettercolor);
+    font-size: 1.5em;
+    padding: 5px;
+    text-decoration: underline;
+    border-radius: 5px;
+}
+/*Header Style*/
+
+/*Main Style*/
+main
+{
+    max-width: 800px;
+    margin: auto;
+    background: var(--backgroundcolor);
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+/*Main componentes Style*/
+main h3
+{
+    text-align: center;
+    font: 4em cocacola;
+}
+
+main > section
+{
+    padding: 15vh 0 15vh 0px;
+    margin-top: 10px;
+    align-items: center;
+    border-radius: 5px;
+}
+
+main > section p
+{
+    text-align: justify;
+    padding: 10px;
+}
+/*Main componentes Style*/
+
+/*Main Classes style*/
+main > section.texto
+{
+    background: var(--backgroundcolor);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+main > section.imagem 
+{
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    background: var(--sectioncolor);
+}
+
+
+main > section#img1
+{
+    background: url(../imagens/wallpaper005.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
+
+main > section#img2
+{
+    background: url(../imagens/wallpaper002.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
+
+main > section#img3
+{
+    background: url(../imagens/wallpaper007.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
+
+main > section.imagem > article
+{
+    width: 50%;
+    height: 50%;
+    margin-left: 5px;
+    border-radius: 5px;
+    background: var(--sectioncolor);
+}
+/*Main Classes style*/
+/*Main Style*/
+
+/*Footer style*/
+/*Social Midia Style*/
+footer .social
+{
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+footer .social a
+{
+    font-size: 14px;
+    color: var(--lettercolor);
+    border: 1px solid white;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+
+footer .social a:hover
+{
+    opacity: 1;
+}
+/*Social Midia Style*/
+
+/*Link List style*/
+footer ul
+{
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+footer ul li
+{
+    display: inline-block;
+    padding: 0 15px;
+    font-variant: small-caps;
+}
+
+footer ul a
+{
+    color: var(--lettercolor);
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+footer ul a:hover
+{
+    opacity: 1;
+    text-decoration: underline;
+}
+/*Link List style*/
+
+/*Paragraph style*/
+footer .copyright
+{
+    text-align: center;
+    padding: 20px;
+}
+/*Paragraph style*/
+/*Footer style*/
